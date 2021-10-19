@@ -1,5 +1,9 @@
 cmake_minimun_required (Version 3.8)
 
+#if (${CMAKE_VERSION} VERSION_LESS 3.12)
+ #   cmake_policy(VERSION ${CMAKE_VERSION})
+#endif()
+
 project ("beispiel")
 
 #Add the cmake folder so the FindSphinx module is found
